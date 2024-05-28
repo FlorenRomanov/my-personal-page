@@ -4,11 +4,12 @@ body {
     padding: 0;
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: #333;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
 body.fade-out {
     opacity: 0;
+    filter: blur(10px);
 }
 
 header {
@@ -63,6 +64,13 @@ header h1 {
     background-color: #fff;
     color: #333;
     transform: translateY(-5px);
+}
+
+section {
+    padding: 2em;
+    margin: 2em 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
 }
 
 footer {
